@@ -3,7 +3,7 @@ import { crx, defineManifest } from "@crxjs/vite-plugin";
 
 const manifest = defineManifest({
   manifest_version: 3,
-  name: "サイトの色確認",
+  name: "サイトの色を確認",
   description: "サイトの色（カラーコード）を知ることができます。",
   version: "1.0.0",
   icons: {
