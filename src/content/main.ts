@@ -1,6 +1,6 @@
 const styles: Partial<CSSStyleDeclaration> = {
   position: "fixed",
-  top: "20px",
+  top: "40px",
   right: "20px",
   padding: "10px",
   backgroundColor: "#333",
