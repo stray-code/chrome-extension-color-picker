@@ -16,7 +16,7 @@ const App = () => {
     }
 
     await chrome.tabs.sendMessage(tab.id, {
-      type: "SHOW_TOAST",
+      type: "showToast",
       colorCode,
     });
   };

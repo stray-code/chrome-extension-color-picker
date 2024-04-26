@@ -20,7 +20,7 @@ const showToast = (colorCode: string) => {
 };
 
 chrome.runtime.onMessage.addListener((message) => {
-  if (message.type === "SHOW_TOAST") {
+  if (message.type === "showToast") {
     showToast(message.colorCode);
   }
 });
