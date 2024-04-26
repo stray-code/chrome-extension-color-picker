@@ -16,7 +16,7 @@ const showToast = (colorCode: string) => {
 
   setTimeout(() => {
     toastElement.remove();
-  }, 2000);
+  }, 3000);
 };
 
 chrome.runtime.onMessage.addListener((message) => {
