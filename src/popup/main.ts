@@ -34,6 +34,10 @@ const App = () => {
         const colorCode = res.sRGBHex;
         await navigator.clipboard.writeText(colorCode);
         await showToast(colorCode);
+
+        await new Promise((resolve) => setTimeout(resolve, 10));
+
+        window.close();
       })
       .catch((error) => {
         console.error(error);
