@@ -1,18 +1,18 @@
-const styles: Partial<CSSStyleDeclaration> = {
-  position: "fixed",
-  top: "40px",
-  right: "20px",
-  padding: "10px",
-  backgroundColor: "#333",
-  color: "#fff",
-  zIndex: "calc(Infinity)",
-};
+import van from "vanjs-core";
+
+import "./style.css";
 
 const showToast = (colorCode: string) => {
-  const toastElement = document.createElement("div");
-  Object.assign(toastElement.style, styles);
-  toastElement.innerText = `${colorCode}をコピーしました。`;
-  document.body.appendChild(toastElement);
+  const { div } = van.tags;
+
+  const toastElement = div(
+    {
+      class: "chrome-extension-color-picker",
+    },
+    `${colorCode}をコピーしました。`,
+  );
+
+  van.add(document.body, toastElement);
 
   setTimeout(() => {
     toastElement.remove();

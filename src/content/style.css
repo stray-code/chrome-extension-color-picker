@@ -1,0 +1,10 @@
+.chrome-extension-color-picker {
+  all: initial !important;
+  position: fixed !important;
+  top: 40px !important;
+  right: 20px !important;
+  padding: 10px !important;
+  background-color: #333 !important;
+  color: #fff !important;
+  z-index: calc(Infinity) !important;
+}
